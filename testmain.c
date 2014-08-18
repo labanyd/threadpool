@@ -42,7 +42,7 @@ int main(int argc, char **argv)
 
 	while (pool->m_iTaskNum != 0) 
 	{
-		i = pool->m_iPthreadNum;
+		i = pool->m_iPthreadNum - 1
 		for (; i >= 0; i--)
 		{
 			printf("thread:%d  is %d\n", *(pool->m_pth + i), *(pool->m_pStatus + i));
